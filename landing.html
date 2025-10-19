@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earn $6,000+ Monthly as a Professional Mystery Shopper - Apply Now!</title>
+    <meta name="description" content="Join 3,200+ successful mystery shoppers earning $6,000+ monthly. No experience required. Free training. Flexible schedule. Apply now - only 17 positions remaining!">
+    <link rel="stylesheet" href="landing-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="landing-script.js?v=1.3" defer></script>
+</head>
+<body>
+    <!-- Urgency Bar -->
+    <div class="urgency-bar">
+        <div class="container">
+            <div class="urgency-content">
+                <span class="urgency-icon">🔥</span>
+                <span class="urgency-text">URGENT: Only <span id="positions-remaining">17</span> Positions Remaining for February 2024</span>
+                <div class="countdown-timer">
+                    <span id="countdown">23:45:12</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="breaking-badge">
+                    <span class="badge-icon">⚡</span>
+                    BREAKING: We're hiring 50 new mystery shoppers this month!
+                </div>
+                
+                <h1 class="hero-headline">
+                    Earn <span class="highlight">$6,000+ Monthly</span> as a Professional Mystery Shopper
+                    <span class="subtext">No Experience Required!</span>
+                </h1>
+                
+                <p class="hero-subheadline">
+                    Join <strong>3,200+ successful mystery shoppers</strong> who've replaced their 9-5 income with flexible, high-paying assignments. Get paid <strong>$500+ per visit</strong> to shop, dine, and evaluate services.
+                </p>
+
+                <!-- Problem/Solution -->
+                <div class="problem-solution">
+                    <div class="problems">
+                        <h3>Are you tired of:</h3>
+                        <ul>
+                            <li><i class="fas fa-times"></i> Fixed schedules that control your life?</li>
+                            <li><i class="fas fa-times"></i> Limited income potential?</li>
+                            <li><i class="fas fa-times"></i> Missing family events for work?</li>
+                            <li><i class="fas fa-times"></i> Long commutes and office politics?</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="solutions">
+                        <h3>What if you could:</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Earn $500-$700 per assignment (2-3 hours work)</li>
+                            <li><i class="fas fa-check"></i> Choose your own schedule - work when YOU want</li>
+                            <li><i class="fas fa-check"></i> Get paid to shop, dine, and experience services</li>
+                            <li><i class="fas fa-check"></i> Build a $6,000+ monthly income working part-time</li>
+                            <li><i class="fas fa-check"></i> Receive free professional training worth $1,200</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hero-cta">
+                    <button class="cta-button primary" onclick="scrollToApplication()">
+                        <span class="cta-text">SECURE YOUR POSITION NOW</span>
+                        <span class="cta-subtext">Takes less than 8 minutes • 100% Free</span>
+                    </button>
+                    <div class="cta-benefits">
+                        <span><i class="fas fa-clock"></i> Instant confirmation</span>
+                        <span><i class="fas fa-shield-alt"></i> 100% secure</span>
+                        <span><i class="fas fa-dollar-sign"></i> No fees</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Income Calculator -->
+    <section class="income-calculator">
+        <div class="container">
+            <h2>Calculate Your Potential Monthly Income</h2>
+            <div class="calculator">
+                <div class="calculator-input">
+                    <label for="assignments">How many assignments per month?</label>
+                    <input type="range" id="assignments" min="5" max="30" value="15" oninput="calculateIncome()">
+                    <span id="assignment-count">15</span> assignments
+                </div>
+                <div class="calculator-result">
+                    <div class="income-display">
+                        <span class="income-label">Your Monthly Income:</span>
+                        <span class="income-amount" id="monthly-income">$7,500 - $9,000</span>
+                    </div>
+                    <div class="income-breakdown">
+                        <span id="yearly-income">$90,000 - $108,000 annually</span>
+                    </div>
+                </div>
+            </div>
+            <div class="income-tiers">
+                <div class="tier">
+                    <h4>Part-Time</h4>
+                    <p>8 assignments/month</p>
+                    <span class="tier-income">$4,000-$4,800</span>
+                </div>
+                <div class="tier active">
+                    <h4>Standard</h4>
+                    <p>15 assignments/month</p>
+                    <span class="tier-income">$7,500-$9,000</span>
+                </div>
+                <div class="tier">
+                    <h4>Full-Time</h4>
+                    <p>25+ assignments/month</p>
+                    <span class="tier-income">$12,500-$15,000+</span>
+                </div>
+            </div>
+            <div class="income-cta">
+                <button class="cta-button primary" onclick="scrollToApplication()">
+                    <span class="cta-text">Start Earning Today</span>
+                    <span class="cta-subtext">Apply Now - Limited Positions Available</span>
+                </button>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Application Form -->
+    <section class="application-form" id="application">
+        <div class="container">
+            <div class="form-header">
+                <h2>🚀 SECURE YOUR POSITION NOW</h2>
+                <p>Complete your application in under 8 minutes and join thousands earning $6,000+ monthly.</p>
+                <div class="form-benefits">
+                    <span><i class="fas fa-clock"></i> Takes less than 8 minutes</span>
+                    <span><i class="fas fa-lock"></i> 100% secure and confidential</span>
+                    <span><i class="fas fa-ban"></i> No fees or upfront costs</span>
+                    <span><i class="fas fa-phone"></i> Instant confirmation call within 24 hours</span>
+                </div>
+            </div>
+
+            <form class="application-form-container" id="mysteryShopperForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="streetAddress">Street Address *</label>
+                    <input type="text" id="streetAddress" name="streetAddress" placeholder="123 Main Street" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">City *</label>
+                        <input type="text" id="city" name="city" placeholder="New York" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State *</label>
+                        <select id="state" name="state" required>
+                            <option value="">Select State</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="DC">Washington D.C.</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="zip">ZIP Code *</label>
+                        <input type="text" id="zip" name="zip" placeholder="12345" pattern="[0-9]{5}(-[0-9]{4})?" maxlength="10" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="age">Age *</label>
+                        <select id="age" name="age" required>
+                            <option value="">Select Age Range</option>
+                            <option value="18-25">18-25</option>
+                            <option value="26-35">26-35</option>
+                            <option value="36-45">36-45</option>
+                            <option value="46-55">46-55</option>
+                            <option value="56+">56+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Previous Mystery Shopping Experience</label>
+                        <select id="experience" name="experience">
+                            <option value="none">No Experience</option>
+                            <option value="some">Some Experience</option>
+                            <option value="experienced">Very Experienced</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="availability">When are you available to start? *</label>
+                    <select id="availability" name="availability" required>
+                        <option value="">Select Availability</option>
+                        <option value="immediately">Immediately</option>
+                        <option value="1-2weeks">Within 1-2 weeks</option>
+                        <option value="1month">Within 1 month</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="transportation">Reliable Transportation *</label>
+                    <select id="transportation" name="transportation" required>
+                        <option value="">Select transportation method</option>
+                        <option value="car">Personal Vehicle</option>
+                        <option value="public">Public Transportation</option>
+                        <option value="both">Both</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="referralSource">How did you hear about us?</label>
+                    <select id="referralSource" name="referralSource">
+                        <option value="">Select source</option>
+                        <option value="google">Google Search</option>
+                        <option value="email">Email</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="friend">Friend/Family</option>
+                        <option value="job-board">Job Board</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="motivation">Why do you want to become a mystery shopper? *</label>
+                    <textarea id="motivation" name="motivation" rows="3" required placeholder="Tell us what motivates you..."></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span class="checkmark"></span>
+                        I agree to the terms and conditions and privacy policy *
+                    </label>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="marketing" name="marketing">
+                        <span class="checkmark"></span>
+                        I want to receive updates about high-paying assignments and exclusive opportunities
+                    </label>
+                </div>
+
+                <button type="submit" class="cta-button primary submit-btn">
+                    <span class="cta-text">SUBMIT APPLICATION</span>
+                    <span class="cta-subtext">Secure your position before they're gone!</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof">
+        <div class="container">
+            <h2>What Our Successful Shoppers Say</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"I earned $8,400 last month working just 15 hours per week. This changed my life!"</p>
+                    <div class="author">- Sarah M., Top Performer</div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"From unemployed to $72,000 annually in 10 months. The training is incredible!"</p>
+                    <div class="author">- Marcus R., Full-Time Shopper</div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Perfect for busy moms. I work around my kids' schedule and still make $4,500/month."</p>
+                    <div class="author">- Jennifer K., Part-Time Shopper</div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <button class="cta-button primary" onclick="scrollToApplication()">
+                    <span class="cta-text">Join These Success Stories</span>
+                    <span class="cta-subtext">Apply Now - Start Earning This Week</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You'll Do Section -->
+    <section class="what-youll-do">
+        <div class="container">
+            <h2>What You'll Do (And How Much You'll Earn)</h2>
+            <div class="job-types">
+                <div class="job-type">
+                    <div class="job-icon">🛍️</div>
+                    <h3>Retail Evaluations</h3>
+                    <p>Visit stores, make purchases, evaluate customer service</p>
+                    <div class="job-details">
+                        <span class="time">1-2 hours</span>
+                        <span class="pay">$500-$600</span>
+                    </div>
+                </div>
+                <div class="job-type">
+                    <div class="job-icon">🍽️</div>
+                    <h3>Restaurant Assessments</h3>
+                    <p>Dine at restaurants, evaluate food quality and service</p>
+                    <div class="job-details">
+                        <span class="time">2-3 hours</span>
+                        <span class="pay">$600-$750</span>
+                    </div>
+                </div>
+                <div class="job-type">
+                    <div class="job-icon">🏨</div>
+                    <h3>Service Industries</h3>
+                    <p>Evaluate hotels, banks, automotive services</p>
+                    <div class="job-details">
+                        <span class="time">1-4 hours</span>
+                        <span class="pay">$500-$800</span>
+                    </div>
+                </div>
+            </div>
+             <div class="section-cta">
+                <button class="cta-button primary" onclick="scrollToApplication()">
+                    <span class="cta-text">Secure Your Position Now</span>
+                    <span class="cta-subtext">Only 17 Spots Left - Don't Miss Out!</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2>Your Guaranteed Benefits</h2>
+            <div class="benefits-grid">
+                <div class="benefit">
+                    <div class="benefit-icon">💰</div>
+                    <h3>$500-$800 Per Assignment</h3>
+                    <p>+ 100% expense reimbursement + transportation allowance</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">⏰</div>
+                    <h3>Complete Flexibility</h3>
+                    <p>Choose assignments that fit YOUR schedule (no minimums, no quotas)</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">🎓</div>
+                    <h3>Free Certification Program</h3>
+                    <p>40-hour professional training (normally $1,200) - YOURS FREE</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>100% Legitimate & Protected</h3>
+                    <p>BBB A+ rated, fully insured, guaranteed payment within 5 days</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">📈</div>
+                    <h3>Unlimited Earning Potential</h3>
+                    <p>Top performers earn $10,000+ monthly</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>No Experience Required</h3>
+                    <p>We train you from zero to professional evaluator</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Urgency & Scarcity -->
+    <section class="urgency-scarcity">
+        <div class="container">
+            <div class="urgency-box">
+                <div class="warning-icon">⚠️</div>
+                <h3>WARNING: We're only accepting 50 new shoppers this month due to high client demand.</h3>
+                <div class="urgency-details">
+                    <div class="deadline">
+                        <i class="fas fa-clock"></i>
+                        <span>Application Deadline: October 29th, 2025 (or when positions fill)</span>
+                    </div>
+                    <div class="status">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Current Status: <span id="positions-status">17</span> positions remaining (updated hourly)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risk Reversal -->
+    <section class="risk-reversal">
+        <div class="container">
+            <h2>Why You Can Trust Us</h2>
+            <div class="trust-indicators">
+                <div class="trust-item">
+                    <i class="fas fa-award"></i>
+                    <span>BBB A+ Rating (6 years running)</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>Over $2.4 million paid to shoppers in 2023</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Featured in Forbes, Entrepreneur Magazine</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-thumbs-up"></i>
+                    <span>98.7% shopper satisfaction rate</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-ban"></i>
+                    <span>Zero upfront costs or fees</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Guaranteed payment protection</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- More Testimonials -->
+    <section class="more-testimonials">
+        <div class="container">
+            <h2>Success Stories From Real Shoppers</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"I was skeptical at first, but after my first assignment paid $650 for 3 hours of work, I was hooked. Now I'm making more than my old corporate job with half the stress."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>David L.</strong>
+                        <span>Former Accountant, Now Full-Time Mystery Shopper</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The training was incredible. They taught me everything - from observation techniques to professional reporting. I felt completely prepared for my first assignment."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Amanda T.</strong>
+                        <span>New Shopper (Started 3 months ago, now earning $5,200/month)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Is this legitimate?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. We're BBB A+ rated with 6 years in business and have paid over $2.4 million to shoppers.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do I need experience?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No! We provide comprehensive training. Many of our top earners started with zero experience.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How much can I really earn?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our average shopper earns $6,200/month. Top performers exceed $12,000/month.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>When do I get paid?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Payment is guaranteed within 5 business days of completed assignment submission.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="final-cta-content">
+                <div class="warning-badge">🔥 LAST CHANCE WARNING 🔥</div>
+                <h2>Don't let this opportunity pass you by</h2>
+                <p>In 12 months, you could be earning $72,000+ annually while others are still stuck in their 9-5 jobs.</p>
+                
+                <div class="bonus-offers">
+                    <h3>The next 50 people who apply will receive:</h3>
+                    <ul>
+                        <li>🎁 FREE $1,200 certification program</li>
+                        <li>🎁 Priority assignment selection</li>
+                        <li>🎁 Personal success coach for first 90 days</li>
+                        <li>🎁 Exclusive access to high-paying premium assignments</li>
+                    </ul>
+                </div>
+
+                <button class="cta-button primary final-cta-btn" onclick="scrollToApplication()">
+                    <span class="cta-text">APPLY NOW BEFORE POSITIONS CLOSE</span>
+                    <span class="cta-subtext">Only <span id="final-positions">17</span> positions remaining</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-trust">
+                    <div class="trust-badges">
+                        <span class="badge">BBB A+ Rated</span>
+                        <span class="badge">$2.4M+ Paid Out</span>
+                        <span class="badge">98.7% Satisfaction</span>
+                    </div>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2024 360 Relay Mystery Shopping Program. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Service</a>
+                        <a href="#contact">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="landing-script.js"></script>
+</body>
+</html>
