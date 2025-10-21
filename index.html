@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="landing-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="landing-script.js?v=1.3" defer></script>
 </head>
 <body>
     <!-- Urgency Bar -->
@@ -16,7 +15,7 @@
         <div class="container">
             <div class="urgency-content">
                 <span class="urgency-icon">🔥</span>
-                <span class="urgency-text">URGENT: Only <span id="positions-remaining">17</span> Positions Remaining for February 2024</span>
+                <span class="urgency-text">URGENT: Only <span id="positions-remaining">17</span> Positions Remaining for <span id="current-month-deadline"></span></span>
                 <div class="countdown-timer">
                     <span id="countdown">23:45:12</span>
                 </div>
@@ -143,7 +142,7 @@
                 </div>
             </div>
 
-            <form class="application-form-container" id="mysteryShopperForm">
+            <form class="application-form-container" id="application-form">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="firstName">First Name *</label>
@@ -167,7 +166,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="streetAddress">Street Address *</label>
+                    <label for="streetAddress">Full House Address (NO PO Box) *</label>
                     <input type="text" id="streetAddress" name="streetAddress" placeholder="123 Main Street" required>
                 </div>
 
@@ -612,6 +611,6 @@
         </div>
     </footer>
 
-    <script src="landing-script.js"></script>
+    <script src="landing-new.js"></script>
 </body>
 </html>
