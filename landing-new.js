@@ -102,10 +102,37 @@ function initIncomeCalculator() {
             const yearlyUpper = upperBound * 12;
             yearlyIncomeDisplay.textContent = `$${yearlyLower.toLocaleString()} - $${yearlyUpper.toLocaleString()} annually`;
         }
+        
+        // Update tier selection based on assignments
+        updateTierSelection(assignments);
     }
     
     slider.addEventListener('input', updateIncome);
     updateIncome(); // Initial calculation
+}
+
+// Function to update tier selection based on assignments
+function updateTierSelection(assignments) {
+    const tiers = document.querySelectorAll('.tier');
+    
+    // Remove active class from all tiers
+    tiers.forEach(tier => tier.classList.remove('active'));
+    
+    // Determine which tier should be active based on assignments
+    let activeTierIndex = 1; // Default to Standard (index 1)
+    
+    if (assignments <= 8) {
+        activeTierIndex = 0; // Part-Time
+    } else if (assignments <= 15) {
+        activeTierIndex = 1; // Standard
+    } else {
+        activeTierIndex = 2; // Full-Time
+    }
+    
+    // Add active class to the appropriate tier
+    if (tiers[activeTierIndex]) {
+        tiers[activeTierIndex].classList.add('active');
+    }
 }
 
 // Global function for external access
@@ -140,6 +167,9 @@ window.calculateIncome = function() {
         const yearlyUpper = upperBound * 12;
         yearlyIncomeDisplay.textContent = `$${yearlyLower.toLocaleString()} - $${yearlyUpper.toLocaleString()} annually`;
     }
+    
+    // Update tier selection based on assignments
+    updateTierSelection(assignments);
 };
 
 // Position Counter (Scarcity)
